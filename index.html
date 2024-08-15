@@ -63,7 +63,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
-    <script src="app.js"></script>
+    <script src="/app.js"></script>
     <script>
         // 检测用户的语言偏好
     const preferredLanguage = navigator.language || navigator.userLanguage;
@@ -131,7 +131,7 @@
         window.location.href = '/lt/index.html';
     } else if (preferredLanguage.startsWith('lv')) { // 拉脱维亚语
         window.location.href = '/lv/index.html';
-    } else if (preferredLanguage.startsWith('sl')) { // 斯洛文尼亚语| 上传到这里
+    } else if (preferredLanguage.startsWith('sl')) { // 斯洛文尼亚语
         window.location.href = '/sl/index.html';
     } else if (preferredLanguage.startsWith('sr')) { // 塞尔维亚语
         window.location.href = '/sr/index.html';
@@ -187,8 +187,6 @@
         window.location.href = '/lo/index.html';
     } else if (preferredLanguage.startsWith('my')) { // 缅甸语
         window.location.href = '/my/index.html';
-    } else if (preferredLanguage.startsWith('bo')) { // 藏语
-        window.location.href = '/bo/index.html';
     } else if (preferredLanguage.startsWith('cy')) { // 威尔士语
         window.location.href = '/cy/index.html';
     } else if (preferredLanguage.startsWith('ga')) { // 爱尔兰语
@@ -209,9 +207,7 @@
         window.location.href = '/az/index.html';
     } else if (preferredLanguage.startsWith('bs')) { // 波斯尼亚语
         window.location.href = '/bs/index.html';
-    } else if (preferredLanguage.startsWith('sq')){// 阿尔巴尼亚语
-        window.location.href = '/sq/index.html';
-    } else {
+    }  else {
             // 如果没有匹配，则默认留在当前页面（中文版）
     }
         </script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অডিও সম্পাদক</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+    <meta name="description" content="একটি বিনামূল্যে অনলাইন অডিও সম্পাদক যা আপনাকে যেকোনো অডিও ফাইল কেটে দিতে সহায়তা করে।">
+    
+    <meta name="author" content="Jeffrey Chen">
+    
+    <meta name="keywords" content="অডিও সম্পাদক, অনলাইন অডিও সম্পাদক, বিনামূল্যে অনলাইন অডিও সম্পাদক, অনলাইন অডিও কাটার টুল, বিনামূল্যে অনলাইন অডিও কাটার টুল, অনলাইন অডিও এডিটিং সফটওয়্যার, অনলাইন অডিও এডিটিং ওয়েবসাইট">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    </link>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KYHVH24XQR');
+</script>
+</head>
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="লোগো" style="width: 200px">
+        </img>
+        <h1>অডিও সম্পাদক</h1>
+        <p>বিনামূল্যে অডিও এডিটিং টুল</p>
+        <p>আপনার অডিও শুধুমাত্র স্থানীয়ভাবে প্রক্রিয়া করা হবে এবং আপলোড করা হবে না</p>
+        
+        <div id="uploadSection">
+            <button id="uploadBtn">ফাইল নির্বাচন করুন</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                শুরুর সময়: <span id="startTime">00:00.000</span> | 
+                শেষের সময়: <span id="endTime">00:00.000</span> | 
+                দৈর্ঘ্য: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">প্লে</button>
+                <button id="trimBtn">কাটা</button>
+                <button id="saveBtn">সংরক্ষণ করুন</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

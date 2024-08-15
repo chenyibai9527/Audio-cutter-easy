@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аудио редагер</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+    <meta name="description" content="Онлајн аудио редактор који омогућава сецкање било којег аудио фајла без наплате.">
+    
+    <meta name="author" content="Jeffrey Chen">
+    
+    <meta name="keywords" content="аудио редагер, онлајн аудио редаговање, бесплатан онлајн аудио редагер, онлајн аудио уредник, бесплатан онлајн аудио уредник, алати за сецкање аудиа онлајн, алати за уређивање аудиа онлајн, онлајн аудио едитор софтвер, онлајн аудио уређивачки софтвер, онлајн аудио сечер веб локација, онлајн аудио уредник веб локација, онлајн аудио сечер алати, онлајн аудио уредник алати, онлајн аудио сечер апликације, онлајн аудио уредник апликације, онлајн аудио сечер сајтови, онлајн аудио уредник сајтови, онлајн аудио">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    </link>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KYHVH24XQR');
+</script>
+</head>
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="логотип" style="width: 200px">
+        </img>
+        <h1>Аудио редагер</h1>
+        <p>Бесплатно алатство за редакцију аудио записа</p>
+        <p>Ваш аудио се обрађује само локално и не се пријављује на интернет.</p>
+        
+        <div id="uploadSection">
+            <button id="uploadBtn">Изабери датотеку</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Почетак: <span id="startTime">00:00.000</span> | 
+                Крај: <span id="endTime">00:00.000</span> | 
+                Трајање: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Репродукуј</button>
+                <button id="trimBtn">Обрежи</button>
+                <button id="saveBtn">Сачувај</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

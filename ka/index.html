@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>აუდიო რედაქტორი</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+    <meta name="description" content="უფასო ონლაინ აუდიო რედაქტორი, რომელიც გაწვდოს ნებისმიერი აუდიო ფაილის გაჭრა.">
+    
+    <meta name="author" content="Jeffrey Chen">
+    
+    <meta name="keywords" content="აუდიო რედაქტორი, ონლაინ აუდიო რედაქტორი, უფასო ონლაინ აუდიო რედაქტორი, ონლაინ ხმის რედაქტირების ინსტრუმენტი, უფასო ონლაინ ხმის რედაქტირების ინსტრუმენტი, ონლაინ ხმის რედაქტირების პროგრამული უზრუნველყოფა, ონლაინ ვებსაიტი ხმის რედაქტირებისათვის">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    </link>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KYHVH24XQR');
+</script>
+</head>
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="ლოგო" style="width: 200px">
+        </img>
+        <h1>აუდიო რედაქტორი</h1>
+        <p>უფასო აუდიო რედაქტირების ინსტრუმენტი</p>
+        <p>თქვენი აუდიო მხოლოდ ადგილობრივ დონეზე დამუშავდება და არ იქნება ატვირთული</p>
+        
+        <div id="uploadSection">
+            <button id="uploadBtn">ფაილის არჩევა</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                დასაწყისი: <span id="startTime">00:00.000</span> | 
+                ბოლოს: <span id="endTime">00:00.000</span> | 
+                ხანგრძლივობა: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">თამაშო</button>
+                <button id="trimBtn">გაჭრა</button>
+                <button id="saveBtn">შენახვა</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

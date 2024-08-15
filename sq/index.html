@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvokovni urejevalnik</title>
+    <title>Redaktori i Audio</title>
     <link rel="stylesheet" href="/styles.css">
     
-    <meta name="description" content="Spletni zvokovni urejevalnik, ki omogoča sreženje zvokovnih datotek na spletu.">
+    <meta name="description" content="Një redaktor audio online falas që ju lejon të prisni çdo file audio.">
     
     <meta name="author" content="Jeffrey Chen">
     
-    <meta name="keywords" content="zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spletni orodja za sreževanje zvoka,spletna orodja za urejanje zvoka,spletna programska oprema za sreževanje zvoka,spletna programska oprema za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,zvok">
+    <meta name="keywords" content="redaktor audio, redaktor audio online, redaktor audio falas online, mjet online për redaktimin e zërit, mjet falas online për redaktimin e zërit, software online për redaktimin e zërit, faqja online për redaktimin e zërit">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     </link>
     <!-- Google tag (gtag.js) -->
@@ -27,26 +27,26 @@
     <div class="container">
         <img src="/logo.png" alt="logo" style="width: 200px">
         </img>
-        <h1>Zvokovni urejevalnik</h1>
-        <p>Brezplačno orodje za urejanje zvoka</p>
-        <p>Tvoj zvok se bo obrajal le na lokalnem računalniku in ne bo naložen na splet.</p>
+        <h1>Redaktori i Audio</h1>
+        <p>Një mjet falas për redaktimin e audios</p>
+        <p>Audio juaj do të përpunohet vetëm në nivel lokal dhe nuk do të ngarkohet</p>
         
         <div id="uploadSection">
-            <button id="uploadBtn">Izberi datoteko</button>
+            <button id="uploadBtn">Zgjidhni File</button>
         </div>
 
         <div id="editorSection">
             <div id="waveform"></div>
             <div id="timeline"></div>
             <div class="time-display">
-                Začetek: <span id="startTime">00:00.000</span> | 
-                Končna točka: <span id="endTime">00:00.000</span> | 
-                Dolžina: <span id="duration">00:00.000</span>
+                Fillimi: <span id="startTime">00:00.000</span> | 
+                Mbarimi: <span id="endTime">00:00.000</span> | 
+                Kohëzgjatja: <span id="duration">00:00.000</span>
             </div>
             <div id="controls">
-                <button id="playBtn">Vosproizvedi</button>
-                <button id="trimBtn">Sreži</button>
-                <button id="saveBtn">Shrani</button>
+                <button id="playBtn">Luaj</button>
+                <button id="trimBtn">Prij</button>
+                <button id="saveBtn">Ruaj</button>
                 <select id="formatSelect">
                     <option value="wav">WAV</option>
                     <option value="mp3">MP3</option>

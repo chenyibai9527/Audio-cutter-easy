@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="aýdym redaktory, onlaýn aýdym redaktory, tölegsiz onlaýn aýdym redaktory, onlaýn aýdym redaktirleme guraly, tölegsiz onlaýn aýdym redaktirleme guraly, onlaýn aýdym gurallary, onlaýn aýdym redaktirleme programma, onlaýn aýdym redaktirleme web sahypasy">
+    <meta name="description" content="Her hili aýdym faýllaryny onlaýn redaktirlemek üçin tölegsiz onlaýn aýdym redaktory.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Aýdym Redaktory</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KYHVH24XQR');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Aýdym Redaktory</h1>
+        <p>Tölegsiz aýdym redaktirleme guraly</p>
+        <p>Aýdymaýyz ýerlikli görnüşde işlemäge we ýüklenmeýär.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Faýly saýlaň</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Başlangyç: <span id="startTime">00:00.000</span> |
+                Soň: <span id="endTime">00:00.000</span> |
+                Uzaklyk: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Oýnat</button>
+                <button id="trimBtn">Kesmek</button>
+                <button id="saveBtn">Sakla</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

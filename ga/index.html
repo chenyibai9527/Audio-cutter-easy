@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ga">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="eagarthóir comhoibrithe, eagarthóir comhoibrithe ar líne, eagarthóir comhoibrithe ar líne saor in aisce, uirlis eagarthóireachta comhoibrithe ar líne, uirlis eagarthóireachta comhoibrithe ar líne saor in aisce, uirlis comhoibrithe ar líne, bogearra eagarthóireachta comhoibrithe ar líne, suíomh gréasáin eagarthóireachta comhoibrithe ar líne">
+    <meta name="description" content="Uirlis comhoibrithe ar líne saor in aisce atá in ann comhoibrithe comhoibrithe a eagarthóireacht ar líne.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Comhoibrithe Eagarthóir</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KYHVH24XQR');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Comhoibrithe Eagarthóir</h1>
+        <p>Uirlis eagarthóireachta comhoibrithe saor in aisce</p>
+        <p>Beidh do chomhoibrithe ag dul trí phróiseas áitiúil agus ní bheidh sé á uaslódáil.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Roghnaigh comhoibrithe</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Tús: <span id="startTime">00:00.000</span> |
+                Críoch: <span id="endTime">00:00.000</span> |
+                Fad: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Imir</button>
+                <button id="trimBtn">Gearr</button>
+                <button id="saveBtn">Sábháil</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

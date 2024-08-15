@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="as">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvokovni urejevalnik</title>
+    <title>অডিঅ' সম্পাদক</title>
     <link rel="stylesheet" href="/styles.css">
     
-    <meta name="description" content="Spletni zvokovni urejevalnik, ki omogoča sreženje zvokovnih datotek na spletu.">
+    <meta name="description" content="যিকোনো অডিঅ' ফাইল কটা বাবে এক বিনামূলীয়া অনলাইন অডিঅ' সম্পাদক।">
     
     <meta name="author" content="Jeffrey Chen">
     
-    <meta name="keywords" content="zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spletni orodja za sreževanje zvoka,spletna orodja za urejanje zvoka,spletna programska oprema za sreževanje zvoka,spletna programska oprema za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,zvok">
+    <meta name="keywords" content="অডিঅ' সম্পাদক, অনলাইন অডিঅ' সম্পাদক, বিনামূলীয়া অনলাইন অডিঅ' সম্পাদক, অনলাইন অডিঅ' কটা সঁজুলি, বিনামূলীয়া অনলাইন অডিঅ' কটা সঁজুলি, অনলাইন অডিঅ' সম্পাদনা ছফটৱেৰ, অনলাইন অডিঅ' সম্পাদনা ৱেবচাইট">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     </link>
     <!-- Google tag (gtag.js) -->
@@ -25,28 +25,27 @@
 </head>
 <body>
     <div class="container">
-        <img src="/logo.png" alt="logo" style="width: 200px">
-        </img>
-        <h1>Zvokovni urejevalnik</h1>
-        <p>Brezplačno orodje za urejanje zvoka</p>
-        <p>Tvoj zvok se bo obrajal le na lokalnem računalniku in ne bo naložen na splet.</p>
+        <img src="/logo.png" alt="লগ'"> 
+        <h1>অডিঅ' সম্পাদক</h1>
+        <p>বিনামূলীয়া অডিঅ' সম্পাদনা সঁজুলি</p>
+        <p>আপোনাৰ অডিঅ' কেৱল স্থানীয়ভাৱে প্ৰক্ৰিয়া কৰা হ'ব আৰু আপলোড কৰা হ'ব না</p>
         
         <div id="uploadSection">
-            <button id="uploadBtn">Izberi datoteko</button>
+            <button id="uploadBtn">ফাইল বাচনি কৰক</button>
         </div>
 
         <div id="editorSection">
             <div id="waveform"></div>
             <div id="timeline"></div>
             <div class="time-display">
-                Začetek: <span id="startTime">00:00.000</span> | 
-                Končna točka: <span id="endTime">00:00.000</span> | 
-                Dolžina: <span id="duration">00:00.000</span>
+                আৰম্ভণি: <span id="startTime">00:00.000</span> | 
+                অন্ত: <span id="endTime">00:00.000</span> | 
+                কাল: <span id="duration">00:00.000</span>
             </div>
             <div id="controls">
-                <button id="playBtn">Vosproizvedi</button>
-                <button id="trimBtn">Sreži</button>
-                <button id="saveBtn">Shrani</button>
+                <button id="playBtn">চলাও</button>
+                <button id="trimBtn">কাটি দিয়া</button>
+                <button id="saveBtn">সংৰক্ষণ কৰক</button>
                 <select id="formatSelect">
                     <option value="wav">WAV</option>
                     <option value="mp3">MP3</option>

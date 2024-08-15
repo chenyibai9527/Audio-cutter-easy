@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="gu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvokovni urejevalnik</title>
+    <title>ઑડિઓ એડિટર</title>
     <link rel="stylesheet" href="/styles.css">
     
-    <meta name="description" content="Spletni zvokovni urejevalnik, ki omogoča sreženje zvokovnih datotek na spletu.">
+    <meta name="description" content="તમે કોઈપણ ઑડિઓ ફાઇલને કાપવા માટે મફત ઑનલાઇન ઑડિઓ એડિટર.">
     
     <meta name="author" content="Jeffrey Chen">
     
-    <meta name="keywords" content="zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spletni orodja za sreževanje zvoka,spletna orodja za urejanje zvoka,spletna programska oprema za sreževanje zvoka,spletna programska oprema za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,zvok">
+    <meta name="keywords" content="ઑડિઓ એડિટર, ઑનલાઇન ઑડિઓ એડિટર, મફત ઑનલાઇન ઑડિઓ એડિટર, ઑનલાઇન ઑડિઓ કાપવાના ટૂલ, મફત ઑનલાઇન ઑડિઓ કાપવાના ટૂલ, ઑનલાઇન ઑડિઓ એડિટિંગ સોફ્ટવેર, ઑનલાઇન ઑડિઓ એડિટિંગ વેબસાઇટ">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     </link>
     <!-- Google tag (gtag.js) -->
@@ -25,28 +25,28 @@
 </head>
 <body>
     <div class="container">
-        <img src="/logo.png" alt="logo" style="width: 200px">
+        <img src="/logo.png" alt="લોગો" style="width: 200px">
         </img>
-        <h1>Zvokovni urejevalnik</h1>
-        <p>Brezplačno orodje za urejanje zvoka</p>
-        <p>Tvoj zvok se bo obrajal le na lokalnem računalniku in ne bo naložen na splet.</p>
+        <h1>ઑડિઓ એડિટર</h1>
+        <p>મફત ઑડિઓ એડિટિંગ ટૂલ</p>
+        <p>તમારું ઑડિઓ ફક્ત સ્થાનિક રીતે પ્રક્રિયા કરવામાં આવશે અને અપલોડ કરવામાં આવશે નહીં</p>
         
         <div id="uploadSection">
-            <button id="uploadBtn">Izberi datoteko</button>
+            <button id="uploadBtn">ફાઈલ પસંદ કરો</button>
         </div>
 
         <div id="editorSection">
             <div id="waveform"></div>
             <div id="timeline"></div>
             <div class="time-display">
-                Začetek: <span id="startTime">00:00.000</span> | 
-                Končna točka: <span id="endTime">00:00.000</span> | 
-                Dolžina: <span id="duration">00:00.000</span>
+                શરૂઆત: <span id="startTime">00:00.000</span> | 
+                અંત: <span id="endTime">00:00.000</span> | 
+                સમયગાળો: <span id="duration">00:00.000</span>
             </div>
             <div id="controls">
-                <button id="playBtn">Vosproizvedi</button>
-                <button id="trimBtn">Sreži</button>
-                <button id="saveBtn">Shrani</button>
+                <button id="playBtn">ચલાવવું</button>
+                <button id="trimBtn">કાપવું</button>
+                <button id="saveBtn">સાથે સાચવો</button>
                 <select id="formatSelect">
                     <option value="wav">WAV</option>
                     <option value="mp3">MP3</option>

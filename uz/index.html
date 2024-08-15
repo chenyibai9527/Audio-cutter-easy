@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="audio tahrirlovchi, onlayn audio tahrirlovchi, bepul onlayn audio tahrirlovchi, onlayn audio tahrirlash vositasi, bepul onlayn audio tahrirlash vositasi, onlayn audio vositalari, onlayn audio tahrirlash dasturi, onlayn audio tahrirlash veb-sayti">
+    <meta name="description" content="Har qanday audio fayllarni onlayn tahrirlash uchun bepul onlayn audio tahrirlovchi.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Audio Tahrirlovchi</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KYHVH24XQR');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Audio Tahrirlovchi</h1>
+        <p>Bepul audio tahrirlash vositasi</p>
+        <p>Audioingiz mahalliy ravishda qayta ishlanadi va yuklanmaydi.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Faylni tanlang</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Boshlanish: <span id="startTime">00:00.000</span> |
+                Tugash: <span id="endTime">00:00.000</span> |
+                Davomiyligi: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Ijro etish</button>
+                <button id="trimBtn">Kesish</button>
+                <button id="saveBtn">Saqlash</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

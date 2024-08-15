@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="редактори овоз, редактори овоз онлайн, редактори овоз онлайн ройгон, воситаи таҳрири овоз онлайн, воситаи таҳрири овоз онлайн ройгон, воситаҳои овоз онлайн, барномаи таҳрири овоз онлайн, вебсайти таҳрири овоз онлайн">
+    <meta name="description" content="Редактори овози ройгон онлайн барои таҳрири ҳама гуна файлҳои овоз онлайн.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Редактори Овоз</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KYHVH24XQR');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Редактори Овоз</h1>
+        <p>Воситаи ройгони таҳрири овоз</p>
+        <p>Овозатон маҳаллиро коркард мекунад ва бор карда намешавад.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Файлеро интихоб кунед</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Шурӯъ: <span id="startTime">00:00.000</span> |
+                Пойгонӣ: <span id="endTime">00:00.000</span> |
+                Муддат: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Навоидан</button>
+                <button id="trimBtn">Буридан</button>
+                <button id="saveBtn">Захира кардан</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

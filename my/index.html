@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="my">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="အသံဖြတ်တောက်ခြင်း, အွန်လိုင်းအသံဖြတ်တောက်ခြင်း, အခမဲ့အွန်လိုင်းအသံဖြတ်တောက်ခြင်း, အွန်လိုင်းအသံတည်းဖြတ်ခြင်း, အခမဲ့အွန်လိုင်းအသံတည်းဖြတ်ခြင်း, အသံရောထွေးမှု, အွန်လိုင်းအသံတည်းဖြတ်မှုအိပ်တီကူးများ, အွန်လိုင်းအသံတည်းဖြတ်မှုဆော့ဖ်ဝဲ, အွန်လိုင်းအသံတည်းဖြတ်မှုဝဘ်ဆိုက်">
+    <meta name="description" content="အခမဲ့အွန်လိုင်းအသံဖြတ်တောက်ခြင်းတစ်ခုဖြစ်ပြီး၊ သင်၏အသံဖိုင်များကိုအွန်လိုင်းတွင်တည်းဖြတ်နိုင်သည်။">
+    <meta name="author" content="Jeffrey Chen">
+    <title>အသံဖြတ်တောက်ခြင်း</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KYHVH24XQR');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>အသံတည်းဖြတ်ခြင်း</h1>
+        <p>အခမဲ့အသံတည်းဖြတ်မှုကိရိယာ</p>
+        <p>သင့်အသံကိုဒေသခံအတိုင်းစီမံပြုလုပ်ပြီး တင်သွင်းမထားပါ။</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">ဖိုင်ရွေးချယ်ပါ</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                အစ: <span id="startTime">00:00.000</span> |
+                အဆုံး: <span id="endTime">00:00.000</span> |
+                အထိအကျ: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">ပါ့လုပ်ပါ</button>
+                <button id="trimBtn">ဖြတ်ပါ</button>
+                <button id="saveBtn">သိမ်းဆည်းပါ</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

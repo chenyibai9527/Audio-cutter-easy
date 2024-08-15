@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="mk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zvokovni urejevalnik</title>
+    <title>Аудио уредувач</title>
     <link rel="stylesheet" href="/styles.css">
     
-    <meta name="description" content="Spletni zvokovni urejevalnik, ki omogoča sreženje zvokovnih datotek na spletu.">
+    <meta name="description" content="Бесплатен онлајн аудио уредувач кој ви овозможува да исечете било која аудио датотека.">
     
     <meta name="author" content="Jeffrey Chen">
     
-    <meta name="keywords" content="zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spleten zvokovni urejevalnik,brezplačen spleten zvokovni urejevalnik,spletni orodja za sreževanje zvoka,spletna orodja za urejanje zvoka,spletna programska oprema za sreževanje zvoka,spletna programska oprema za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,spletna mesta za sreževanje zvoka,spletna mesta za urejanje zvoka,zvok">
+    <meta name="keywords" content="аудио уредувач, онлајн аудио уредувач, бесплатен онлајн аудио уредувач, онлајн алатка за уредување звук, бесплатен онлајн алатка за уредување звук, онлајн софтвер за уредување звук, онлајн веб страница за уредување звук">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     </link>
     <!-- Google tag (gtag.js) -->
@@ -25,28 +25,28 @@
 </head>
 <body>
     <div class="container">
-        <img src="/logo.png" alt="logo" style="width: 200px">
+        <img src="/logo.png" alt="лого" style="width: 200px">
         </img>
-        <h1>Zvokovni urejevalnik</h1>
-        <p>Brezplačno orodje za urejanje zvoka</p>
-        <p>Tvoj zvok se bo obrajal le na lokalnem računalniku in ne bo naložen na splet.</p>
+        <h1>Аудио уредувач</h1>
+        <p>Бесплатна алатка за уредување на аудио</p>
+        <p>Вашето аудио ќе биде обработено само локално и нема да биде пренесено</p>
         
         <div id="uploadSection">
-            <button id="uploadBtn">Izberi datoteko</button>
+            <button id="uploadBtn">Избери датотека</button>
         </div>
 
         <div id="editorSection">
             <div id="waveform"></div>
             <div id="timeline"></div>
             <div class="time-display">
-                Začetek: <span id="startTime">00:00.000</span> | 
-                Končna točka: <span id="endTime">00:00.000</span> | 
-                Dolžina: <span id="duration">00:00.000</span>
+                Почеток: <span id="startTime">00:00.000</span> | 
+                Крај: <span id="endTime">00:00.000</span> | 
+                Траење: <span id="duration">00:00.000</span>
             </div>
             <div id="controls">
-                <button id="playBtn">Vosproizvedi</button>
-                <button id="trimBtn">Sreži</button>
-                <button id="saveBtn">Shrani</button>
+                <button id="playBtn">Пушти</button>
+                <button id="trimBtn">Исечи</button>
+                <button id="saveBtn">Зачувај</button>
                 <select id="formatSelect">
                     <option value="wav">WAV</option>
                     <option value="mp3">MP3</option>
