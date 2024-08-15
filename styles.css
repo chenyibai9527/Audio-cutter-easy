@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #17161e;
+    color: #ffffff;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #888;
+}
+#uploadSection {
+    text-align: center;
+    padding: 40px 0;
+}
+#uploadBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff30;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+#uploadSection button:hover {
+    background-color: #ffffff50;
+}
+#editorSection {
+    display: none;
+}
+#waveform {
+    background-color: #2e2e2e;
+    border-radius: 5px;
+}
+
+
+
+#timeline {
+    margin-top: -20px;
+    
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#saveBtn {
+    padding: 10px 20px;
+    margin-right: 0px;
+    background-color: #ffffff30;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#saveBtn:hover {
+    background-color: #ffffff50;
+}
+
+#controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ffffff30;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#controls button:hover {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ffffff50;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#playBtn.playing {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+#trimBtn {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+#exportSection {
+    text-align: center;
+    margin-top: 20px;
+}
+#formatSelect {
+    margin-left: -8px;
+    padding: 10px 5px;
+    border-radius: 3px;
+    background-color: #ffffff30;
+    color: white;
+    border:none;
+    
+}
+
+.time-display {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+.wavesurfer-handle {
+    width: 10px !important;
+    background-color: #00ff8e !important;
+}
