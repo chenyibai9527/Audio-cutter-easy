@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="محرر كليب الصوت, محرر كليب الصوت عبر الإنترنت, محرر كليب الصوت المجاني عبر الإنترنت, محرر الصوت عبر الإنترنت, محرر الصوت المجاني عبر الإنترنت, أداة كليب الصوت عبر الإنترنت, أداة تحرير الصوت عبر الإنترنت, برنامج كليب الصوت عبر الإنترنت, برنامج تحرير الصوت عبر الإنترنت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت, موقع لتحرير كليب الصوت, موقع لتحرير الصوت">
+    <meta name="description" content="محرر كليب الصوت عبر الإنترنت المجاني الذي يتيح لك تحرير جميع أنواع ملفات الصوت عبر الإنترنت.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>محرر كليب الصوت</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        /* تأكيد على أن النص في الاتجاه الصحيح */
+        body {
+            direction: rtl;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="الشعار" style="width: 200px">
+        <h1>محرر الصوت</h1>
+        <p>أداة تحرير الصوت مجانية</p>
+        <p>سيتم معالجة صوتك محليًا ولن يتم رفعه.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">اختيار الملف</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                بداية: <span id="startTime">00:00.000</span> |
+                نهاية: <span id="endTime">00:00.000</span> |
+                المدة: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">تشغيل</button>
+                <button id="trimBtn">قص</button>
+                <button id="saveBtn">حفظ</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

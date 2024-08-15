@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="editare fișier audio, editare fișier audio online, instrument gratuit de editare a fișierelor audio online, editare sunet online, instrument gratuit de editare a sunetului online, instrument pentru editarea fișierelor audio online, instrument pentru editarea sunetului online, software pentru editarea fișierelor audio online, software pentru editarea sunetului online, site web pentru editarea fișierelor audio, site web pentru editarea sunetului, site web pentru editarea fișierelor audio, site web pentru editarea sunetului, site web pentru editarea fișierelor audio, site web pentru editarea sunetului, site web pentru editarea fișierelor audio, site web pentru editarea sunetului, site web pentru editarea fișierelor audio, site web pentru editarea sunetului">
+    <meta name="description" content="Instrument gratuit de editare a fișierelor audio online care permite editarea diferitelor tipuri de fișiere audio pe internet.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Editare Sunet</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logo" style="width: 200px">
+        <h1>Editare Sunet</h1>
+        <p>Instrument gratuit pentru editarea sunetului</p>
+        <p>Fișierele audio ale utilizatorilor sunt procesate local și nu sunt încărcate pe internet.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Selectează fișierul</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Început: <span id="startTime">00:00.000</span> |
+                Sfârșit: <span id="endTime">00:00.000</span> |
+                Durată: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Redă</button>
+                <button id="trimBtn">Taie</button>
+                <button id="saveBtn">Salvează</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

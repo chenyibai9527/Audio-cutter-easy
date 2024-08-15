@@ -40,11 +40,13 @@ let wavesurfer;
             handle:{
                         left:{
                             width: '8px',
-                backgroundColor: '#00ff8e'
+                            backgroundColor: '#64e1c6'
                         },
                         right:{
                             width: '8px',
+                            backgroundColor: '#64e1c6'
                         },
+                        
                     }
         });
         updateTimeDisplay();
@@ -81,7 +83,8 @@ let wavesurfer;
     document.getElementById('uploadBtn').addEventListener('click', function() {
         let input = document.createElement('input');
         input.type = 'file';
-        input.accept = 'audio/*';
+        
+        input.accept = 'audio/*,video/*,.mp4,.m4a,.wav,.mp3,.flac,.aac';
         input.onchange = e => {
             let file = e.target.files[0];
             loadAudioFile(file);
@@ -123,12 +126,45 @@ function loadAudioFile(file) {
     let reader = new FileReader();
     reader.onload = function(e) {
         let arrayBuffer = e.target.result;
+        convertAndLoadAudioFile(arrayBuffer, file.type);
+    };
+    reader.readAsArrayBuffer(file);
+}
+
+function convertAndLoadAudioFile(arrayBuffer, mimeType) {
+    if (mimeType.startsWith('audio/') || mimeType.startsWith('video/')) {
+        // 尝试直接解码
         audioContext.decodeAudioData(arrayBuffer, function(buffer) {
             audioBuffer = buffer;
             wavesurfer.loadDecodedBuffer(buffer);
+        }, function(error) {
+            console.error('Error decoding audio data:', error);
+            // 如果直接解码失败，则尝试转换为 .wav 格式
+            convertToWav(arrayBuffer, function(wavBuffer) {
+                audioContext.decodeAudioData(wavBuffer, function(buffer) {
+                    audioBuffer = buffer;
+                    wavesurfer.loadDecodedBuffer(buffer);
+                });
+            });
         });
-    };
-    reader.readAsArrayBuffer(file);
+    } else {
+        console.error('Unsupported file type:', mimeType);
+    }
+}
+
+function convertToWav(arrayBuffer, callback) {
+    // 使用 ffmpeg.js 转换为 .wav
+    ffmpeg({
+        MEMFS: [{name: 'input.m4a', data: new Uint8Array(arrayBuffer)}],
+        arguments: ['-i', 'input.m4a', '-f', 'wav', 'output.wav'],
+        onRuntimeInitialized: () => {
+            ffmpeg.run().then(() => {
+                const output = ffmpeg.FS('readFile', 'output.wav');
+                const wavBuffer = new Uint8Array(output.buffer);
+                callback(wavBuffer.buffer);
+            });
+        }
+    });
 }
 
         function updateTimeDisplay() {

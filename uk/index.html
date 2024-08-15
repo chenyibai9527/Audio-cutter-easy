@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="редагування аудіофайлів, веб-інструменти для редагування аудіофайлів, безкоштовні веб-інструменти для редагування аудіофайлів, онлайн-редагування звуку, безкоштовні веб-інструменти для редагування звуку, інструменти для редагування аудіофайлів онлайн, інструменти для редагування звуку онлайн, програмне забезпечення для редагування аудіофайлів онлайн, програмне забезпечення для редагування звуку онлайн, веб-сайт для редагування аудіофайлів, веб-сайт для редагування звуку, веб-сайт для редагування аудіофайлів, веб-сайт для редагування звуку, веб-сайт для редагування аудіофайлів, веб-сайт для редагування звуку, веб-сайт для редагування аудіофайлів, веб-сайт для редагування звуку, веб-сайт для редагування аудіофайлів, веб-сайт для редагування звуку">
+    <meta name="description" content="Безкоштовні веб-інструменти для редагування аудіофайлів, які дозволяють онлайн-редагування різних типів аудіофайлів.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Редагування Звуку</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Логотип" style="width: 200px">
+        <h1>Редагування Звуку</h1>
+        <p>Безкоштовні інструменти для редагування звуку</p>
+        <p>Аудіофайли користувачів обробляються локально та не завантажуються до Інтернету.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Вибрати файл</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Початок: <span id="startTime">00:00.000</span> |
+                Кінець: <span id="endTime">00:00.000</span> |
+                Тривалість: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Відтворити</button>
+                <button id="trimBtn">Обрізати</button>
+                <button id="saveBtn">Зберегти</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

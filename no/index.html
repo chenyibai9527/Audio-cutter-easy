@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="lydfil redigering, nettbasert lydfil redigering, gratis nettbasert lydfil redigering, lyd redigering på nett, gratis nettbasert lyd redigering, verktøy for nettbasert lydfil redigering, verktøy for nettbasert lyd redigering, programvare for nettbasert lydfil redigering, programvare for nettbasert lyd redigering, nettside for lydfil redigering, nettside for lyd redigering, nettside for lydfil redigering, nettside for lyd redigering, nettside for lydfil redigering, nettside for lyd redigering, nettside for lydfil redigering, nettside for lyd redigering, nettside for lydfil redigering, nettside for lyd redigering">
+    <meta name="description" content="Gratis nettbasert verktøy for å redigere lydfiler, som gjør det mulig å redigere ulike typer lydfiler på nettet.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Lyd Redigering</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logo" style="width: 200px">
+        <h1>Lyd Redigering</h1>
+        <p>Gratis verktøy for lyd redigering</p>
+        <p>Brukernes lydfiler blir behandlet lokalt og lastes ikke opp til internett.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Velg fil</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Start: <span id="startTime">00:00.000</span> |
+                Slutt: <span id="endTime">00:00.000</span> |
+                Varighet: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Spill av</button>
+                <button id="trimBtn">Beskjær</button>
+                <button id="saveBtn">Lagre</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

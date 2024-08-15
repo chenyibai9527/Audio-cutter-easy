@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="오디오 클립 편집기, 온라인 오디오 클립 편집기, 무료 온라인 오디오 클립 편집기, 온라인 오디오 편집기, 무료 온라인 오디오 편집기, 온라인 오디오 클립 도구, 온라인 오디오 편집 도구, 온라인 오디오 클립 소프트웨어, 온라인 오디오 편집 소프트웨어, 오디오 클립 편집 웹사이트, 오디오 편집 웹사이트">
+    <meta name="description" content="온라인에서 모든 유형의 오디오 파일을 무료로 편집할 수 있는 무료 온라인 오디오 클립 편집기입니다.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>오디오 클립 편집기</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="로고" style="width: 200px">
+        <h1>오디오 편집기</h1>
+        <p>무료 오디오 편집 도구</p>
+        <p>오디오는 로컬에서 처리되며 업로드되지 않습니다.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">파일 선택</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                시작: <span id="startTime">00:00.000</span> |
+                종료: <span id="endTime">00:00.000</span> |
+                길이: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">재생</button>
+                <button id="trimBtn">잘라내기</button>
+                <button id="saveBtn">저장</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

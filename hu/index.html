@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hangfájl szerkesztés, online hangfájl szerkesztés, ingyenes online hangfájl szerkesztés, hang szerkesztés online, ingyenes online hang szerkesztés, eszköz online hangfájl szerkesztéshez, eszköz online hangszerkesztéshez, szoftver online hangfájl szerkesztéshez, szoftver online hangszerkesztéshez, weboldal hangfájl szerkesztéshez, weboldal hangszerkesztéshez, weboldal hangfájl szerkesztéshez, weboldal hangszerkesztéshez, weboldal hangfájl szerkesztéshez, weboldal hangszerkesztéshez, weboldal hangfájl szerkesztéshez, weboldal hangszerkesztéshez, weboldal hangfájl szerkesztéshez, weboldal hangszerkesztéshez">
+    <meta name="description" content="Ingyenes online eszköz hangfájlok szerkesztéséhez, amely lehetővé teszi különböző típusú hangfájlok online szerkesztését.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Hangszerkesztés</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logó" style="width: 200px">
+        <h1>Hangszerkesztés</h1>
+        <p>Ingyenes hangszerkesztő eszköz</p>
+        <p>A felhasználói hangfájlok helyileg vannak feldolgozva, és nem kerülnek feltöltésre.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Fájl kiválasztása</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Kezdés: <span id="startTime">00:00.000</span> |
+                Vég: <span id="endTime">00:00.000</span> |
+                Hossz: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Lejátszás</button>
+                <button id="trimBtn">Kiszágítás</button>
+                <button id="saveBtn">Mentés</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

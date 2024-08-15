@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="επεξεργασία ακουστικού αρχείου, επεξεργασία ακουστικού αρχείου online, δωρεάν επεξεργασία ακουστικού αρχείου online, επεξεργασία ακουστικού online, δωρεάν επεξεργασία ακουστικού online, εργαλείο επεξεργασίας ακουστικού αρχείου online, εργαλείο επεξεργασίας ακουστικού online, λογισμικό επεξεργασίας ακουστικού αρχείου online, λογισμικό επεξεργασίας ακουστικού online, ιστοσελίδα επεξεργασίας ακουστικού αρχείου, ιστοσελίδα επεξεργασίας ακουστικού, ιστοσελίδα επεξεργασίας ακουστικού αρχείου, ιστοσελίδα επεξεργασίας ακουστικού, ιστοσελίδα επεξεργασίας ακουστικού αρχείου, ιστοσελίδα επεξεργασίας ακουστικού, ιστοσελίδα επεξεργασίας ακουστικού αρχείου, ιστοσελίδα επεξεργασίας ακουστικού">
+    <meta name="description" content="Δωρεάν εργαλείο επεξεργασίας ακουστικού αρχείου online που επιτρέπει την επεξεργασία διαφόρων τύπων ακουστικών αρχείων online.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Επεξεργασία Ακουστικού</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Λογότυπο" style="width: 200px">
+        <h1>Επεξεργασία Ακουστικού</h1>
+        <p>Δωρεάν εργαλείο επεξεργασίας ακουστικού</p>
+        <p>Τα ακουστικά αρχεία σας επεξεργάζονται τοπικά και δεν μεταφορτώνονται.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Επιλέξτε αρχείο</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Έναρξη: <span id="startTime">00:00.000</span> |
+                Λήξη: <span id="endTime">00:00.000</span> |
+                Διάρκεια: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Αναπαραγωγή</button>
+                <button id="trimBtn">Κόψιμο</button>
+                <button id="saveBtn">Αποθήκευση</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="editore di clip audio, editore di clip audio online, editore di clip audio online gratuito, editore audio online, editore audio online gratuito, strumento per clip audio online, strumento di editing audio online, software per clip audio online, software di editing audio online, sito web per l'editing di clip audio, sito web per l'editing audio, sito web per l'editing di clip audio, sito web per l'editing audio, sito web per l'editing di clip audio, sito web per l'editing audio, sito web per l'editing di clip audio, sito web per l'editing audio, sito web per l'editing di clip audio, sito web per l'editing audio, sito web per l'editing di clip audio, sito web per l'editing audio, sito web per l'editing di clip audio, sito web per l'editing audio">
+    <meta name="description" content="Un editore di clip audio online gratuito che permette di modificare tutti i tipi di file audio online.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Editore di Clip Audio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Editor di Audio</h1>
+        <p>Strumento di editing audio gratuito</p>
+        <p>Il tuo audio verrà elaborato localmente e non verrà caricato.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Seleziona il file</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Inizio: <span id="startTime">00:00.000</span> |
+                Fine: <span id="endTime">00:00.000</span> |
+                Durata: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Riproduci</button>
+                <button id="trimBtn">Taglia</button>
+                <button id="saveBtn">Salva</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

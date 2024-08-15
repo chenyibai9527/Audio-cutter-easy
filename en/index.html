@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    </meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </meta>
+    <meta name="keywords"
+        content="audio clip editor,online audio clip editor,free online audio clip editor,online audio editor,free online audio editor,online audio clip tool,online audio editor tool,online audio clip software,online audio editor software,online audio clip website,online audio editor website,online audio clip website,online audio editor website,online audio clip website,online audio editor website,online audio clip website,online audio editor website,online audio clip website,online audio editor website,online audio clip website,online audio editor website,online audio clip website,online">
+    <meta name="description" content="A free online audio clip editor that can edit any audio files online.">
+    </meta>
+    <meta name="author" content="Jeffrey Chen">
+    </meta>
+    <title>Audio Clip Editor</title>
+    <link rel="stylesheet" href="/styles.css">
+    </link>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    </link>
+
+</head>
+
+<body>
+    <!-- 翻译为英文 -->
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Audio Editor</h1>
+        <p>Free audio editing tool</p>
+        <p>Your audio will be processed locally and will not be uploaded.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Select File</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Start: <span id="startTime">00:00.000</span> |
+                End: <span id="endTime">00:00.000</span> |
+                Duration: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Play</button>
+                <button id="trimBtn">Trim</button>
+                <button id="saveBtn">Save</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

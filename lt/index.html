@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="garso failų redagavimas, internetiniai įrankiai garso failams redaguoti, nemokami internetiniai įrankiai garso failams redaguoti, internetinis garso redagavimas, nemokami internetiniai įrankiai garso redagavimui, įrankiai garso failams redaguoti internete, įrankiai garso redagavimui internete, programinė įranga garso failams redaguoti internete, programinė įranga garso redagavimui internete, svetainė garso failams redaguoti, svetainė garso redagavimui, svetainė garso failams redaguoti, svetainė garso redagavimui, svetainė garso failams redaguoti, svetainė garso redagavimui, svetainė garso failams redaguoti, svetainė garso redagavimui, svetainė garso failams redaguoti, svetainė garso redagavimui">
+    <meta name="description" content="Nemokami internetiniai įrankiai garso failams redaguoti, leidžiantys internetiniu būdu redaguoti įvairių tipų garso failus.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Garso Redagavimas</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logotipas" style="width: 200px">
+        <h1>Garso Redagavimas</h1>
+        <p>Nemokami įrankiai garso redagavimui</p>
+        <p>Vartotojų garso failai apdorojami vietiniu būdu ir neįkeliama į internetą.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Pasirinkti failą</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Pradžia: <span id="startTime">00:00.000</span> |
+                Pabaiga: <span id="endTime">00:00.000</span> |
+                Trukmė: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Atkurti</button>
+                <button id="trimBtn">Iškirpti</button>
+                <button id="saveBtn">Išsaugoti</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

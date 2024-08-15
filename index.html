@@ -11,9 +11,13 @@
     <meta name="author" content="Jeffrey Chen">
     
     <meta name="keywords" content="音频剪辑器,在线音频剪辑,免费在线音频剪辑,在线音频编辑器,免费在线音频编辑器,在线音频剪辑工具,在线音频编辑工具,在线音频剪辑软件,在线音频编辑软件,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    </link>
 </head>
 <body>
     <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        </img>
         <h1>音频剪辑器</h1>
         <p>免费的音频剪辑工具</p>
         <p>你的音频只会在本地处理，不会被上传</p>
@@ -49,7 +53,157 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
-    <script src="app.js">
+    <script src="https://cdn.jsdelivr.net/npm/ffmpeg.js@0.14.0/ffmpeg.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+        // 检测用户的语言偏好
+const preferredLanguage = navigator.language || navigator.userLanguage;
+
+// 根据语言偏好重定向
+if (preferredLanguage.startsWith('zh')) {
+    window.location.href = '/index.html';
+} else if (preferredLanguage.startsWith('en')) {
+    window.location.href = '/en/index.html';
+} else if (preferredLanguage.startsWith('de')) {
+    window.location.href = '/de/index.html';
+} else if (preferredLanguage.startsWith('fr')) {
+    window.location.href = '/fr/index.html';
+} else if (preferredLanguage.startsWith('ko')) {
+    window.location.href = '/ko/index.html';
+} else if (preferredLanguage.startsWith('es')) { // 西班牙语
+    window.location.href = '/es/index.html';
+} else if (preferredLanguage.startsWith('ru')) { // 俄语
+    window.location.href = '/ru/index.html';
+} else if (preferredLanguage.startsWith('pt')) { // 葡萄牙语
+    window.location.href = '/pt/index.html';
+} else if (preferredLanguage.startsWith('it')) { // 意大利语
+    window.location.href = '/it/index.html';
+} else if (preferredLanguage.startsWith('nl')) { // 荷兰语
+    window.location.href = '/nl/index.html';
+} else if (preferredLanguage.startsWith('ar')) { // 阿拉伯语
+    window.location.href = '/ar/index.html';
+} else if (preferredLanguage.startsWith('ja')) { // 日语
+    window.location.href = '/ja/index.html';
+} else if (preferredLanguage.startsWith('zh-Hant')) { // 繁体中文
+    window.location.href = '/zh-Hant/index.html';
+} else if (preferredLanguage.startsWith('pl')) { // 波兰语
+    window.location.href = '/pl/index.html';
+} else if (preferredLanguage.startsWith('sv')) { // 瑞典语
+    window.location.href = '/sv/index.html';
+} else if (preferredLanguage.startsWith('tr')) { // 土耳其语
+    window.location.href = '/tr/index.html';
+} else if (preferredLanguage.startsWith('vi')) { // 越南语
+    window.location.href = '/vi/index.html';
+} else if (preferredLanguage.startsWith('th')) { // 泰语
+    window.location.href = '/th/index.html';
+} else if (preferredLanguage.startsWith('cs')) { // 捷克语
+    window.location.href = '/cs/index.html';
+} else if (preferredLanguage.startsWith('el')) { // 希腊语
+    window.location.href = '/el/index.html';
+} else if (preferredLanguage.startsWith('fi')) { // 芬兰语
+    window.location.href = '/fi/index.html';
+} else if (preferredLanguage.startsWith('hu')) { // 匈牙利语
+    window.location.href = '/hu/index.html';
+} else if (preferredLanguage.startsWith('id')) { // 印度尼西亚语
+    window.location.href = '/id/index.html';
+} else if (preferredLanguage.startsWith('no')) { // 挪威语
+    window.location.href = '/no/index.html';
+} else if (preferredLanguage.startsWith('ro')) { // 罗马尼亚语
+    window.location.href = '/ro/index.html';
+} else if (preferredLanguage.startsWith('sk')) { // 斯洛伐克语
+    window.location.href = '/sk/index.html';
+} else if (preferredLanguage.startsWith('uk')) { // 乌克兰语
+    window.location.href = '/uk/index.html';
+} else if (preferredLanguage.startsWith('da')) { // 丹麦语
+    window.location.href = '/da/index.html';
+} else if (preferredLanguage.startsWith('et')) { // 爱沙尼亚语
+    window.location.href = '/et/index.html';
+} else if (preferredLanguage.startsWith('lt')) { // 立陶宛语
+    window.location.href = '/lt/index.html';
+} else if (preferredLanguage.startsWith('lv')) { // 拉脱维亚语
+    window.location.href = '/lv/index.html';
+} else if (preferredLanguage.startsWith('sl')) { // 斯洛文尼亚语| 上传到这里
+    window.location.href = '/sl/index.html';
+} else if (preferredLanguage.startsWith('sr')) { // 塞尔维亚语
+    window.location.href = '/sr/index.html';
+} else if (preferredLanguage.startsWith('hr')) { // 克罗地亚语
+    window.location.href = '/hr/index.html';
+} else if (preferredLanguage.startsWith('bg')) { // 保加利亚语
+    window.location.href = '/bg/index.html';
+} else if (preferredLanguage.startsWith('mk')) { // 马其顿语
+    window.location.href = '/mk/index.html';
+} else if (preferredLanguage.startsWith('sq')) { // 阿尔巴尼亚语
+    window.location.href = '/sq/index.html';
+} else if (preferredLanguage.startsWith('hy')) { // 亚美尼亚语
+    window.location.href = '/hy/index.html';
+} else if (preferredLanguage.startsWith('ka')) { // 格鲁吉亚语
+    window.location.href = '/ka/index.html';
+} else if (preferredLanguage.startsWith('mn')) { // 蒙古语
+    window.location.href = '/mn/index.html';
+} else if (preferredLanguage.startsWith('fa')) { // 波斯语
+    window.location.href = '/fa/index.html';
+} else if (preferredLanguage.startsWith('he')) { // 希伯来语
+    window.location.href = '/he/index.html';
+} else if (preferredLanguage.startsWith('ur')) { // 乌尔都语
+    window.location.href = '/ur/index.html';
+} else if (preferredLanguage.startsWith('bn')) { // 孟加拉语
+    window.location.href = '/bn/index.html';
+} else if (preferredLanguage.startsWith('ne')) { // 尼泊尔语
+    window.location.href = '/ne/index.html';
+} else if (preferredLanguage.startsWith('si')) { // 僧伽罗语
+    window.location.href = '/si/index.html';
+} else if (preferredLanguage.startsWith('ta')) { // 泰米尔语
+    window.location.href = '/ta/index.html';
+} else if (preferredLanguage.startsWith('te')) { // 泰卢固语
+    window.location.href = '/te/index.html';
+} else if (preferredLanguage.startsWith('hi')) { // 印地语
+    window.location.href = '/hi/index.html';
+} else if (preferredLanguage.startsWith('mr')) { // 马拉地语
+    window.location.href = '/mr/index.html';
+} else if (preferredLanguage.startsWith('gu')) { // 古吉拉特语
+    window.location.href = '/gu/index.html';
+} else if (preferredLanguage.startsWith('pa')) { // 旁遮普语
+    window.location.href = '/pa/index.html';
+} else if (preferredLanguage.startsWith('kn')) { // 卡纳达语
+    window.location.href = '/kn/index.html';
+} else if (preferredLanguage.startsWith('ml')) { // 马拉雅拉姆语
+    window.location.href = '/ml/index.html';
+} else if (preferredLanguage.startsWith('or')) { // 奥里亚语
+    window.location.href = '/or/index.html';
+} else if (preferredLanguage.startsWith('as')) { // 阿萨姆语
+    window.location.href = '/as/index.html';
+} else if (preferredLanguage.startsWith('km')) { // 高棉语
+    window.location.href = '/km/index.html';
+} else if (preferredLanguage.startsWith('lo')) { // 老挝语
+    window.location.href = '/lo/index.html';
+} else if (preferredLanguage.startsWith('my')) { // 缅甸语
+    window.location.href = '/my/index.html';
+} else if (preferredLanguage.startsWith('bo')) { // 藏语
+    window.location.href = '/bo/index.html';
+} else if (preferredLanguage.startsWith('cy')) { // 威尔士语
+    window.location.href = '/cy/index.html';
+} else if (preferredLanguage.startsWith('ga')) { // 爱尔兰语
+    window.location.href = '/ga/index.html';
+} else if (preferredLanguage.startsWith('is')) { // 冰岛语
+    window.location.href = '/is/index.html';
+} else if (preferredLanguage.startsWith('kk')) { // 哈萨克语
+    window.location.href = '/kk/index.html';
+} else if (preferredLanguage.startsWith('ky')) { // 吉尔吉斯语
+    window.location.href = '/ky/index.html';
+} else if (preferredLanguage.startsWith('uz')) { // 乌兹别克语
+    window.location.href = '/uz/index.html';
+} else if (preferredLanguage.startsWith('tg')) { // 塔吉克语
+    window.location.href = '/tg/index.html';
+} else if (preferredLanguage.startsWith('tk')) { // 土库曼语
+    window.location.href = '/tk/index.html';
+} else if (preferredLanguage.startsWith('az')) { // 阿塞拜疆语
+    window.location.href = '/az/index.html';
+} else if (preferredLanguage.startsWith('bs')) { // 波斯尼亚语
+    window.location.href = '/bs/index.html';
+} else if (preferredLanguage.startsWith('sq')){// 阿尔巴尼亚语
+    window.location.href = '/sq/index.html';
+}
+        // 如果没有匹配，则默认留在当前页面（中文版）
     </script>
 </body>
 </html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="オーディオクリップエディター, オンラインオーディオクリップエディター, 無料オンラインオーディオクリップエディター, オンラインオーディオエディター, 無料オンラインオーディオエディター, オンラインオーディオクリップツール, オンラインオーディオエディティングツール, オンラインオーディオクリップソフトウェア, オンラインオーディオエディティングソフトウェア, オーディオクリップエディティングサイト, オーディオエディティングサイト, オーディオクリップエディティングサイト, オーディオエディティングサイト, オーディオクリップエディティングサイト, オーディオエディティングサイト, オーディオクリップエディティングサイト, オーディオエディティングサイト, オーディオクリップエディティングサイト, オーディオエディティングサイト, オーディオクリップエディティングサイト, オーディオエディティングサイト, オーディオクリップエディティングサイト, オーディオエディティングサイト">
+    <meta name="description" content="すべての種類のオーディオファイルをオンラインで編集できる無料のオンラインオーディオクリップエディター。">
+    <meta name="author" content="Jeffrey Chen">
+    <title>オーディオクリップエディター</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="ロゴ" style="width: 200px">
+        <h1>オーディオエディター</h1>
+        <p>無料のオーディオエディティングツール</p>
+        <p>あなたのオーディオはローカルで処理され、アップロードされることはありません。</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">ファイルを選択</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                開始: <span id="startTime">00:00.000</span> |
+                終了: <span id="endTime">00:00.000</span> |
+                時間: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">再生</button>
+                <button id="trimBtn">トリミング</button>
+                <button id="saveBtn">保存</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -8,6 +8,7 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 h1 {
     text-align: center;
@@ -107,6 +108,9 @@ p {
     border:none;
     
 }
+#formatSelect:hover {
+    background-color: #ffffff50;
+}
 
 .time-display {
     text-align: center;
@@ -116,5 +120,5 @@ p {
 }
 .wavesurfer-handle {
     width: 10px !important;
-    background-color: #00ff8e !important;
+    background-color: #64e1c6 !important;
 }

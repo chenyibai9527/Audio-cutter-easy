@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="garšu dzērienu rediģēšana, tiešsaistes rīki garšu dzērieniem rediģēt, bezmaksas tiešsaistes rīki garšu dzērieniem rediģēt, tiešsaistes garšu rediģēšana, bezmaksas tiešsaistes rīki garšu rediģēšanai, rīki garšu dzērieniem rediģēt tiešsaistē, rīki garšu rediģēšanai tiešsaistē, programmatūra garšu dzērieniem rediģēšanai tiešsaistē, programmatūra garšu rediģēšanai tiešsaistē, mājaslapa garšu dzērieniem rediģēšanai, mājaslapa garšu rediģēšanai, mājaslapa garšu dzērieniem rediģēšanai, mājaslapa garšu rediģēšanai, mājaslapa garšu dzērieniem rediģēšanai, mājaslapa garšu rediģēšanai, mājaslapa garšu dzērieniem rediģēšanai, mājaslapa garšu rediģēšanai, mājaslapa garšu dzērieniem rediģēšanai, mājaslapa garšu rediģēšanai">
+    <meta name="description" content="Bezmaksas tiešsaistes rīki garšu dzērieniem rediģēšanai, kas ļauj tiešsaistē rediģēt dažādu veidu garšu dzērienus.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Garšu Rediģēšana</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logotips" style="width: 200px">
+        <h1>Garšu Rediģēšana</h1>
+        <p>Bezmaksas rīki garšu rediģēšanai</p>
+        <p>Lietotāju garšu dzērienų datnes apstrādā lokāli un netiek augšupielādētas internetā.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Atlasiet failu</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Sākums: <span id="startTime">00:00.000</span> |
+                Beigas: <span id="endTime">00:00.000</span> |
+                Ilgums: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Atskaņot</button>
+                <button id="trimBtn">Apjungt</button>
+                <button id="saveBtn">Saglabāt</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

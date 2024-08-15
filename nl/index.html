@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="audio clip editor, online audio clip editor, gratis online audio clip editor, online audio editor, gratis online audio editor, online audio clip tool, online audio bewerking tool, online audio clip software, online audio bewerking software, website voor audio clip bewerking, website voor audio bewerking, website voor audio clip bewerking, website voor audio bewerking, website voor audio clip bewerking, website voor audio bewerking, website voor audio clip bewerking, website voor audio bewerking, website voor audio clip bewerking, website voor audio bewerking, website voor audio clip bewerking, website voor audio bewerking, website voor audio clip bewerking, website voor audio bewerking">
+    <meta name="description" content="Een gratis online audio clip editor die je toelaat om alle soorten audio bestanden online te bewerken.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Audio Clip Editor</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        <h1>Audio Editor</h1>
+        <p>Gratis hulpmiddel voor audio bewerking</p>
+        <p>Uw audio zal lokaal worden verwerkt en niet worden geüpload.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Bestand selecteren</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Begin: <span id="startTime">00:00.000</span> |
+                Einde: <span id="endTime">00:00.000</span> |
+                Duur: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Afspelen</button>
+                <button id="trimBtn">Knippen</button>
+                <button id="saveBtn">Opslaan</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

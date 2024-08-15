@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="úprava zvukových súborov, webové nástroje na úpravu zvukových súborov, bezplatné webové nástroje na úpravu zvukových súborov, online úprava zvuku, bezplatné webové nástroje na úpravu zvuku, nástroje pre úpravu zvukových súborov online, nástroje pre úpravu zvuku online, softvér pre úpravu zvukových súborov online, softvér pre úpravu zvuku online, webová stránka pre úpravu zvukových súborov, webová stránka pre úpravu zvuku, webová stránka pre úpravu zvukových súborov, webová stránka pre úpravu zvuku, webová stránka pre úpravu zvukových súborov, webová stránka pre úpravu zvuku, webová stránka pre úpravu zvukových súborov, webová stránka pre úpravu zvuku, webová stránka pre úpravu zvukových súborov, webová stránka pre úpravu zvuku">
+    <meta name="description" content="Bezplatné webové nástroje na úpravu zvukových súborov, ktoré umožňujú online úpravu rôznych typov zvukových súborov.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Úprava Zvuku</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logo" style="width: 200px">
+        <h1>Úprava Zvuku</h1>
+        <p>Bezplatné nástroje pre úpravu zvuku</p>
+        <p>Zvukové súbory používateľov sú spracované lokálne a nie sú nahrané do internetu.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Vybrať Súbor</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Začiatok: <span id="startTime">00:00.000</span> |
+                Koniec: <span id="endTime">00:00.000</span> |
+                Dĺžka: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Prehrať</button>
+                <button id="trimBtn">Obriezka</button>
+                <button id="saveBtn">Uložiť</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

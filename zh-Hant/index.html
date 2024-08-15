@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="音檔片段編輯器, 在線音檔片段編輯器, 免費在線音檔片段編輯器, 在線音檔編輯器, 免費在線音檔編輯器, 在線音檔片段工具, 在線音檔編輯工具, 在線音檔片段軟體, 在線音檔編輯軟體, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站, 音檔片段編輯網站, 音檔編輯網站">
+    <meta name="description" content="一個免費的在線音檔片段編輯器，可讓您在線上編輯各種音檔文件。">
+    <meta name="author" content="Jeffrey Chen">
+    <title>音檔片段編輯器</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="標誌" style="width: 200px">
+        <h1>音檔編輯器</h1>
+        <p>免費的音檔編輯工具</p>
+        <p>您的音檔將在本地進行處理，不會上傳。</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">選擇檔案</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                開始: <span id="startTime">00:00.000</span> |
+                結束: <span id="endTime">00:00.000</span> |
+                時長: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">播放</button>
+                <button id="trimBtn">剪輯</button>
+                <button id="saveBtn">保存</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

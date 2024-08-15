@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="pengeditan file audio, pengeditan file audio berbasis web, alat pengeditan file audio gratis berbasis web, pengeditan suara online, alat pengeditan suara gratis berbasis web, alat pengeditan file audio berbasis web, alat pengeditan suara berbasis web, perangkat lunak pengeditan file audio berbasis web, perangkat lunak pengeditan suara berbasis web, situs web untuk pengeditan file audio, situs web untuk pengeditan suara, situs web untuk pengeditan file audio, situs web untuk pengeditan suara, situs web untuk pengeditan file audio, situs web untuk pengeditan suara, situs web untuk pengeditan file audio, situs web untuk pengeditan suara, situs web untuk pengeditan file audio, situs web untuk pengeditan suara">
+    <meta name="description" content="Alat pengeditan file audio gratis berbasis web yang memungkinkan Anda mengedit berbagai jenis file audio secara online.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Pengeditan Suara</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="Logo" style="width: 200px">
+        <h1>Pengeditan Suara</h1>
+        <p>Alat pengeditan suara gratis</p>
+        <p>Berkas audio pengguna diproses secara lokal dan tidak diunggah ke internet.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Pilih Berkas</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Mulai: <span id="startTime">00:00.000</span> |
+                Akhir: <span id="endTime">00:00.000</span> |
+                Durasi: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Putar</button>
+                <button id="trimBtn">Potong</button>
+                <button id="saveBtn">Simpan</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="редактор аудиоклипа, онлайн редактор аудиоклипа, бесплатный онлайн редактор аудиоклипа, онлайн редактор аудио, бесплатный онлайн редактор аудио, инструмент для аудиоклипов онлайн, онлайн инструмент для редактирования аудио, программное обеспечение для аудиоклипов онлайн, онлайн программное обеспечение для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио, веб-сайт для редактирования аудиоклипов, веб-сайт для редактирования аудио">
+    <meta name="description" content="Бесплатный онлайн редактор аудиоклипа, который позволяет редактировать все типы аудиофайлов онлайн.">
+    <meta name="author" content="Jeffrey Chen">
+    <title>Редактор Аудиоклипа</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="логотип" style="width: 200px">
+        <h1>Редактор Аудио</h1>
+        <p>Бесплатный инструмент для редактирования аудио</p>
+        <p>Ваше аудио будет обрабатываться локально и не будет загружено.</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">Выбрать файл</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                Начало: <span id="startTime">00:00.000</span> |
+                Конец: <span id="endTime">00:00.000</span> |
+                Длительность: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">Воспроизвести</button>
+                <button id="trimBtn">Обрезать</button>
+                <button id="saveBtn">Сохранить</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>

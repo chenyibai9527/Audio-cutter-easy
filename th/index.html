@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ตัดเสียง, ตัดเสียงออนไลน์, ตัดเสียงออนไลน์ฟรี, ตัดเสียงออนไลน์, ตัดเสียงออนไลน์ฟรี, ตัวตัดเสียงออนไลน์, ตัวตัดเสียงออนไลน์, โปรแกรมตัดเสียงออนไลน์, โปรแกรมตัดเสียงออนไลน์, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง, เว็บไซต์ตัดเสียง">
+    <meta name="description" content="ตัดเสียงออนไลน์ฟรีที่สามารถตัดไฟล์เสียงหลากหลายประเภทออนไลน์ได้">
+    <meta name="author" content="Jeffrey Chen">
+    <title>ตัวตัดเสียง</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="โลโก้" style="width: 200px">
+        <h1>ตัวตัดเสียง</h1>
+        <p>เครื่องมือตัดเสียงฟรี</p>
+        <p>ไฟล์เสียงของคุณจะถูกประมวลผลในท้องถิ่นและไม่ถูกอัปโหลด</p>
+
+        <div id="uploadSection">
+            <button id="uploadBtn">เลือกไฟล์</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                เริ่ม: <span id="startTime">00:00.000</span> |
+                สิ้นสุด: <span id="endTime">00:00.000</span> |
+                ความยาว: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">เล่น</button>
+                <button id="trimBtn">ตัด</button>
+                <button id="saveBtn">บันทึก</button>
+                <select id="formatSelect">
+                </select>
+            </div>
+            <div id="exportSection">
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.microphone.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+
+</html>
