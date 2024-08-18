@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音频剪辑器</title>
+    <link rel="stylesheet" href="/styles.css">
+    
+    <meta name="description" content="一个在线音频剪辑器，能够在线剪切任何音频文件的免费编辑器。">
+    
+    <meta name="author" content="Jeffrey Chen">
+    
+    <meta name="keywords" content="音频剪辑器,在线音频剪辑,免费在线音频剪辑,在线音频编辑器,免费在线音频编辑器,在线音频剪辑工具,在线音频编辑工具,在线音频剪辑软件,在线音频编辑软件,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频编辑网站,在线音频剪辑网站,在线音频">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Free Audio Editor">
+<meta property="og:description" content="Edit your audio files easily with Free Audio Editor.">
+<meta property="og:image" content="https://www.audio-editor.site/logo.png">
+<meta property="og:url" content="https://audio-editor.site">
+<meta property="og:type" content="website"> 
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KYHVH24XQR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KYHVH24XQR');
+</script>
+</head>
+<body>
+    <div class="container">
+        <img src="/logo.png" alt="logo" style="width: 200px">
+        </img>
+        <h1>音频剪辑器</h1>
+        <p>免费的音频剪辑工具</p>
+        <p>你的音频只会在本地处理，不会被上传</p>
+        
+        <div id="uploadSection">
+            <button id="uploadBtn">选择文件</button>
+        </div>
+
+        <div id="editorSection">
+            <div id="waveform"></div>
+            <div id="timeline"></div>
+            <div class="time-display">
+                起点: <span id="startTime">00:00.000</span> | 
+                终点: <span id="endTime">00:00.000</span> | 
+                时长: <span id="duration">00:00.000</span>
+            </div>
+            <div id="controls">
+                <button id="playBtn">播放</button>
+                <button id="trimBtn">裁剪</button>
+                <button id="saveBtn">保存</button>
+                <select id="formatSelect">
+                    <option value="wav">WAV</option>
+                    <option value="mp3">MP3</option>
+                </select>
+            </div>
+            <div id="exportSection">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/wavesurfer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.timeline.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/6.6.3/plugin/wavesurfer.regions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.1/lame.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.10/dist/umd/ffmpeg.min.js"></script>
+    <script src="/app.js"></script>

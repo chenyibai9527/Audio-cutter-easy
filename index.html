@@ -73,8 +73,8 @@
     const preferredLanguage = navigator.language || navigator.userLanguage;
 
     // 根据语言偏好重定向
-    if (preferredLanguage.startsWith('zh') && window.location.pathname !== '/index.html') {
-        window.location.href = '/index.html';
+    if (preferredLanguage.startsWith('zh-CN') ) {
+        window.location.href = '/zh-CN/index.html';
     } else if (preferredLanguage.startsWith('en')) {
         window.location.href = '/en/index.html';
     } else if (preferredLanguage.startsWith('de')) {
